@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# macOS
+.DS_Store
+
+# Local app state
+.reclaim/
+
+# Temporary
+*.log
