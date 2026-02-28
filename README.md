@@ -5,7 +5,7 @@ Reclaim is a macOS app that helps interrupt League of Legends relapse loops with
 ## 📥 Download & Install
 
 1. Go to **Releases**: https://github.com/kylezhao1026/reclaim/releases
-2. Download the latest `Reclaim.dmg`
+2. Download the latest `Reclaim.dmg` (currently **v0.2.0**)
 3. Open the DMG and drag **Reclaim.app** into **Applications**
 4. Launch **Reclaim** from Applications
 
@@ -23,15 +23,15 @@ When Reclaim starts, choose **Open Setup** if you want to change settings.
 ## 🚨 Trigger Behavior
 
 - Reclaim triggers an overlay when matching League-related files are detected.
-- It can retrigger on nag intervals if files remain.
+- Nag mode can retrigger while matching files remain.
 
 ## ❓Troubleshooting
 
-- If Reclaim doesn’t appear to launch, check Activity Monitor for `Reclaim` process.
+- If Reclaim doesn’t appear to launch, check Activity Monitor for a `Reclaim` process.
 - If macOS blocks first launch, use:
   - right-click app → **Open**
   - or System Settings → Privacy & Security → **Open Anyway**
 
----
+## 🧭 Project Status
 
-For contributors/devs, build and packaging details are in `Reclaim_RELEASE.md`.
+Actively evolving with rapid UX and reliability improvements.
