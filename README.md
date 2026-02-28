@@ -67,15 +67,6 @@ Or reset fully:
 
 ---
 
-## 🔐 Public Release Notes
-
-For public distribution on macOS, you should code-sign and notarize.
-
-See:
-- `Reclaim_RELEASE.md`
-
----
-
 ## 🧭 Project Status
 
 Reclaim is actively evolving. UX and behavior are being tuned in rapid iterations.
