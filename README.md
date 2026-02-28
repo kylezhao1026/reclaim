@@ -6,6 +6,18 @@ Reclaim watches for LoL-related files and, when triggered, shows a full-screen i
 
 ---
 
+## 📥 Download
+
+Get the latest DMG from **Releases**:
+- https://github.com/kylezhao1026/reclaim/releases
+
+Install:
+1. Download `Reclaim.dmg`
+2. Open it and drag **Reclaim.app** into **Applications**
+3. Launch Reclaim from Applications
+
+---
+
 ## ✨ What Reclaim Does
 
 - Detects League-related files/folders (filesystem scan mode)
@@ -40,7 +52,7 @@ Output:
 
 ---
 
-## 📦 Build a DMG
+## 📦 Build a DMG (for sharing)
 
 ```bash
 bash scripts/build_dmg.sh
