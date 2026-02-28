@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="/Users/kylezhao/.openclaw/workspace"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP="$ROOT/dist/Reclaim.app"
 DMG="$ROOT/dist/Reclaim.dmg"
 STAGE="$ROOT/dist/dmg-stage"
