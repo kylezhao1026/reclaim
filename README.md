@@ -1,84 +1,37 @@
 # Reclaim
 
-A focused macOS intervention app for reducing League of Legends relapse loops.
+Reclaim is a macOS app that helps interrupt League of Legends relapse loops with a full-screen intervention overlay.
 
-Reclaim watches for LoL-related files and, when triggered, shows a full-screen interruption experience (custom image + music + countdown ring) to break autopilot behavior.
+## 📥 Download & Install
 
----
+1. Go to **Releases**: https://github.com/kylezhao1026/reclaim/releases
+2. Download the latest `Reclaim.dmg`
+3. Open the DMG and drag **Reclaim.app** into **Applications**
+4. Launch **Reclaim** from Applications
 
-## 📥 Download
+## ✅ First Launch
 
-Get the latest DMG from **Releases**:
-- https://github.com/kylezhao1026/reclaim/releases
+- Complete setup:
+  - choose your image
+  - choose your audio track
+- Reclaim then runs in the background and watches for League-related files.
 
-Install:
-1. Download `Reclaim.dmg`
-2. Open it and drag **Reclaim.app** into **Applications**
-3. Launch Reclaim from Applications
+## ⚙️ Re-open Setup Later
 
----
+When Reclaim starts, choose **Open Setup** if you want to change settings.
 
-## ✨ What Reclaim Does
+## 🚨 Trigger Behavior
 
-- Detects League-related files/folders (filesystem scan mode)
-- Launches a full-screen intervention overlay
-- Uses your chosen image + audio track
-- Shows a circular time-progress indicator
-- Supports recurring reminders (nag mode)
-- Includes first-run setup + re-setup flow
+- Reclaim triggers an overlay when matching League-related files are detected.
+- It can retrigger on nag intervals if files remain.
 
----
+## ❓Troubleshooting
 
-## 🚀 Quick Start (Development)
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install watchdog pyinstaller
-python league_guard.py
-```
+- If Reclaim doesn’t appear to launch, check Activity Monitor for `Reclaim` process.
+- If macOS blocks first launch, use:
+  - right-click app → **Open**
+  - or System Settings → Privacy & Security → **Open Anyway**
 
 ---
 
-## 🛠 Build the macOS App
-
-```bash
-source .venv/bin/activate
-pyinstaller --noconfirm --windowed --icon Reclaim.icns --name Reclaim league_guard.py
-```
-
-Output:
-- `dist/Reclaim.app`
-
----
-
-## 📦 Build a DMG (for sharing)
-
-```bash
-bash scripts/build_dmg.sh
-```
-
-Output:
-- `dist/Reclaim.dmg`
-
----
-
-## ⚙️ Re-open Setup
-
-If setup is already complete and you want to reconfigure:
-
-```bash
-/Applications/Reclaim.app/Contents/MacOS/Reclaim --setup
-```
-
-Or reset fully:
-
-```bash
-/Applications/Reclaim.app/Contents/MacOS/Reclaim --reset-setup
-```
-
----
-
-## 🧭 Project Status
-
-Reclaim is actively evolving. UX and behavior are being tuned in rapid iterations.
+For contributors/devs, build and packaging details are in `Reclaim_RELEASE.md`.
